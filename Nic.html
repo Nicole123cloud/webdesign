@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikki's Restaurant Bestie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Nikki’s Restaurant Bestie</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to your Bestie’s Favorite Food Spot!</h2>
+    <p>Delicious meals. Cozy vibes. Perfect every time.</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-category">
+      <h3>Starters</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="Tomatoe soup.jpg" alt="Tomato Soup" />
+          <h4>Tomato Soup</h4>
+          <p>Creamy tomato soup with herbs</p>
+          <span>$5.99</span>
+        </div>
+        <div class="menu-card">
+          <img src="Bruschetta.jpg" alt="Bruschetta" />
+          <h4>Bruschetta</h4>
+          <p>Grilled bread with garlic and tomato</p>
+          <span>$6.99</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Main Course</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="creamy pasta.jpg" alt="Creamy Pasta" />
+          <h4>Creamy Pasta</h4>
+          <p>Rich pasta with garlic and white sauce</p>
+          <span>$12.99</span>
+        </div>
+        <div class="menu-card">
+          <img src=" Burger.jpg" alt="Classic Burger" />
+          <h4>Classic Burger</h4>
+          <p>Beef patty, lettuce, tomato, secret sauce</p>
+          <span>$11.50</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Desserts</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="chocolate cake.jpg" alt="Chocolate Cake" />
+          <h4>Chocolate Cake</h4>
+          <p>Rich layered cake with ganache</p>
+          <span>$7.00</span>
+        </div>
+        <div class="menu-card">
+          <img src="vanilla ice cream.jpg" alt="Vanilla Ice Cream" />
+          <h4>Vanilla Ice Cream</h4>
+          <p>Classic vanilla bean ice cream</p>
+          <span>$4.50</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>123 Flavor Street, Foodtown</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Instagram: @nikkisrestaurantbestie</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nikki’s Restaurant Bestie. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+CSS Styling (style.css)
+css
+Copy code
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #8b0000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('images/restaurant-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.menu {
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-category {
+  margin-top: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-card h4 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.menu-card span {
+  font-weight: bold;
+  color: #8b0000;
+}
+
+.contact {
+  background-color: #f3e8e2;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+C. Menu Images
+Folder structure:
+bash
+Copy code
+/project-folder/
+│
+├── index.html
+├── style.css
+└── images/
+    ├── soup.jpg
+    ├── bruschetta.jpg
+    ├── pasta.jpg
+    ├── burger.jpg
+    ├── cake.jpg
+    ├── icecream.jpg
+    └── restaurant-bg.jpg
